@@ -1,4 +1,4 @@
-### Powershell script that helps you to Install/Uminstall software on your machine
+### Powershell script that helps you to install/uninstall software on your machine
 
 ## Run the script and choose the service category:
 
