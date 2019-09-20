@@ -21,3 +21,4 @@
 ### Note : 
 1. You can run this script as administrator
 2. Make sure you are connected to internet
+3. For offline instalation from FTP/Local server, modify the commented script with your ftp login credentials. 
