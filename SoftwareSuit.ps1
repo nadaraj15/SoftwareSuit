@@ -1,6 +1,6 @@
-﻿#########################################################################################
+#########################################################################################
 #
-#                      MAQ Software Suit
+#                      Software Suit
 #  
 # This program is helps you to install few important
 # software silently with less input and efficiency from user
@@ -70,10 +70,10 @@ $exit = new-Object System.Management.Automation.Host.ChoiceDescription "&Exit","
 
 <#++++++++++++++++++   For SQL Server 2017 (2017) ++++++++++++++++++ #>
 # For Mumbai
-$SQLServer17MUMFileSharePath="\\192.168.2.12\Site_Software\12_SQL_Server\SQLServer_2017\RTM\SQL_Server_2017_RTM"
+$SQLServer17MUMFileSharePath="\\192.168.0.0\Site_Software\12_SQL_Server\SQLServer_2017\RTM\SQL_Server_2017_RTM"
 
 # For Hyderbad
-$SQLServer17HYDFileSharePath="\\192.168.2.12\Site_Software\4_SQL_Server\SQL Server 2017\SQL_Server_2017_RTM"
+$SQLServer17HYDFileSharePath="\\192.168.0.0\Site_Software\4_SQL_Server\SQL Server 2017\SQL_Server_2017_RTM"
 
 $SQLServer17FileName="setup"
 
@@ -84,10 +84,10 @@ $SQLServer2017URLFileName="SQLServer2017-SSEI-Expr"
 <#++++++++++++++++++   For SQL Server 2016 (SP1) ++++++++++++++++++ #>
 
 # For Mumbai
-$SQLServer16MUMFileSharePath="\\192.168.2.12\Site_Software\12_SQL_Server\SQL_2016_Sp1\SQLServer2016SP1-FullSlipstream-x64-ENU"
+$SQLServer16MUMFileSharePath="\\192.168.0.0\Site_Software\12_SQL_Server\SQL_2016_Sp1\SQLServer2016SP1-FullSlipstream-x64-ENU"
 
 # For Hyderbad
-$SQLServer16HYDFileSharePath="\\192.168.2.12\Site_Software\4_SQL_Server\SQLExpress2016_SP1\SQLServer2016SP1-FullSlipstream-x64-ENU"
+$SQLServer16HYDFileSharePath="\\192.168.0.0\Site_Software\4_SQL_Server\SQLExpress2016_SP1\SQLServer2016SP1-FullSlipstream-x64-ENU"
 
 $SQLServer16FileName="setup"
 
@@ -100,10 +100,10 @@ $SQLServer2016URLFileName="SQLServer2016-SSEI-Expr"
 
 <#----------- No.02 for SSMS--------#>
 # For Mumbai
-$SQLSMSMUMFileSharePath="\\192.168.2.12\Site_Software\12_SQL_Server\SSMS_17"
+$SQLSMSMUMFileSharePath="\\192.168.0.0\Site_Software\12_SQL_Server\SSMS_17"
 
 # For Hyderbad
-$SQLSMSHYDFileSharePath="\\192.168.2.12\Site_Software\4_SQL_Server\SQL Server 2017"
+$SQLSMSHYDFileSharePath="\\192.168.0.0\Site_Software\4_SQL_Server\SQL Server 2017"
 
 $SQLSMSFileName="SSMS 17.5 -Setup-ENU"
 
@@ -119,7 +119,7 @@ $SSMSFileName="SSMS-Setup-ENU"
 <#++++++++++++++++++   For Visual Studio Express for desktop (2017) ++++++++++++++++++ #>
 
 # For Mumbai
-$VSExpressDesktop17MUMFileSharePath="\\192.168.2.12\Site_Software\0_Development_Software\VS_2017\Express_2017_for_Desktop"
+$VSExpressDesktop17MUMFileSharePath="\\192.168.0.0\Site_Software\0_Development_Software\VS_2017\Express_2017_for_Desktop"
 
 # For Hyderbad
 $VSExpressDesktop17HYDFileSharePath=""
@@ -133,10 +133,10 @@ $VSExpressDesktop17URL="http://aka.ms/vs/15/release/vs_WDExpress.exe"
 <#++++++++++++++++++   For Visual Studio Express for desktop (2015) ++++++++++++++++++ #>
 
 # For Mumbai
-$VSExpressDesktop15MUMFileSharePath="\\192.168.2.12\Site_Software\0_Development_Software\VS_2017\Express_2015_for_Desktop"
+$VSExpressDesktop15MUMFileSharePath="\\192.168.0.0\Site_Software\0_Development_Software\VS_2017\Express_2015_for_Desktop"
 
 # For Hyderbad
-$VSExpressDesktop15HYDFileSharePath="\\192.168.2.12\Site_Software\3_Visual_Studio\VisualStudio_Express_2015\Express_2015_for_Desktop"
+$VSExpressDesktop15HYDFileSharePath="\\192.168.0.0\Site_Software\3_Visual_Studio\VisualStudio_Express_2015\Express_2015_for_Desktop"
 
 $VSExpressDesktop15FileName="vs_WDExpress"
 
@@ -147,7 +147,7 @@ $VSExpressDesktop15FileName=""
 
 <#+++++++++++++++   For Visual Studio Professional ++++++++++++++++++ #>
 # For Mumbai
-$VSExpressProfMUMFileSharePath="\\192.168.2.12\Site_Software\0_Development_Software\VS_2015\VS_Prof_2015"
+$VSExpressProfMUMFileSharePath="\\192.168.0.0\Site_Software\0_Development_Software\VS_2015\VS_Prof_2015"
 
 # For Hyderabad
 $VSExpressProfHYDFileSharePath=""
@@ -160,10 +160,10 @@ $VSExpressProfFileName="vs_professional"
 <#+++++++++++++++++   For Visual Studio Express for web (2017) +++++++++++++ #>
 
 # For Mumbai
-$VSExpressWebMUMFileSharePath="\\192.168.2.12\Site_Software\0_Development_Software\VS_2015\Express_2015_for_Web"
+$VSExpressWebMUMFileSharePath="\\192.168.0.0\Site_Software\0_Development_Software\VS_2015\Express_2015_for_Web"
 
 # For Hyderbad
-$VSExpressWebHYDFileSharePath="\\192.168.2.12\Site_Software\3_Visual_Studio\VisualStudio_Express_2015\Express_2015_for_Web"
+$VSExpressWebHYDFileSharePath="\\192.168.0.0\Site_Software\3_Visual_Studio\VisualStudio_Express_2015\Express_2015_for_Web"
 
 
 $VSExpressWebFileName="vns_full"
@@ -240,7 +240,7 @@ $SSDTFileNameNEW="SSDT-Setup-ENU"
 do {cls
   [int] $choice1 = 0
   while ( $choice1 -lt 1 -or $choice1 -gt 14) {
-Write-Host "Welcome to MAQ Software Suit, '$env:UserName'"$nl
+Write-Host "Welcome to Software Suit, '$env:UserName'"$nl
 Write-Host "Please enter the software category:$nl
             1 = SQL Server
             2 = SSMS (SQL Server Management Studio)
@@ -301,26 +301,26 @@ switch ($choice1)
                                                    
                                      1 {                                                                        
                                                <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection 
 
                                                  
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -415,33 +415,33 @@ switch ($choice1)
                                                                       # Remove the installer
 
                                                                         rm -Force  -Recurse "$strRootFolderName\SQL_Server_2017_RTM"
-                                        
+                                      #>  
                                    } 
 
                                    2{
                                    
                                                                                                          
                                                <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection 
 
                                                  
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -535,7 +535,7 @@ switch ($choice1)
                                                                       # Remove the installer
 
                                                                         rm -Force  -Recurse "$strRootFolderName\SQL_Server_2017_RTM"
-                                   
+                                    #>
                                    }
 
                                     3{
@@ -590,23 +590,23 @@ switch ($choice1)
                                                  and create a new one, else create a new connection #>
 
                                                  
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -747,26 +747,26 @@ switch ($choice1)
                                      1 {
 
                                          <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection
 
                                                  
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -861,7 +861,7 @@ switch ($choice1)
                                                                       # Remove the installer
 
                                                                         rm -Force  -Recurse "$strRootFolderName\SQLServer2016SP1-FullSlipstream-x64-ENU"
-                        
+                                       #>
                                    } 
 
                                     2{
@@ -914,26 +914,26 @@ switch ($choice1)
                                     3 {   
                                              
                                                 <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection
 
                                                  
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -1032,7 +1032,7 @@ switch ($choice1)
                                                                                        
                                                                         Remove-Item -Recurse -Force "C:\Program Files\Microsoft SQL Server\MSSQL13.$INSTANCEName\"                     
                                                                         rm -Force  -Recurse "$strRootFolderName\SQLServer2016SP1-FullSlipstream-x64-ENU"
-                                                
+                                        #>         
             
                                   }
 
@@ -1082,25 +1082,25 @@ switch ($choice1)
 
 
                                     <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection 
 
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -1173,7 +1173,7 @@ switch ($choice1)
                                                                       # Remove the installer
 
                                                                         rm -Force -Recurse $strRootFolderName\"$SQLSMSFileName"*
-
+                        #>
                    
                    }
                  
@@ -1293,25 +1293,25 @@ switch ($choice1)
                                                    
                                      1 {                      
                                                <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection 
 
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -1386,7 +1386,7 @@ switch ($choice1)
                                                                         rm -Force -Recurse "$strRootFolderName\Express_2015_for_Web"   
                                                                                                            
 
-                                                
+                                                #>
                         
                                    } 
 
@@ -1497,25 +1497,25 @@ switch ($choice1)
                                      1 {
                     
                                                <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection 
 
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -1588,32 +1588,32 @@ switch ($choice1)
                                                                       # Remove the installer
 
                                                                         rm -Force -Recurse "$strRootFolderName\Express_2017_for_Desktop"
-                                                         
+                                                 #>        
                         
                                    } 
 
                                     2{                                   
                                                     
                                               <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection
 
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -1688,7 +1688,7 @@ switch ($choice1)
                                                                         rm -Force -Recurse "$strRootFolderName\Express_2015_for_Desktop"                                                                                                                                     
                                                                                              
                                                                             
-                                    
+                                         #>
                                     
                                      }
                                     
@@ -1798,25 +1798,25 @@ switch ($choice1)
                                                    
                                                                      1 {              
                                                                               <# Check to see if a connection already exists to File Share, if exists then delete the current connection 
-                                                 and create a new one, else create a new connection #>
+                                                 and create a new one, else create a new connection 
 
-                                                     $checkpath = Test-Path "\\192.168.2.12\scripts"
+                                                     $checkpath = Test-Path "\\192.168.0.0\scripts"
 
                                                      if($checkpath -eq "TRUE")
                                                           {
                                                               Write-Host 'Deleting the exisiting connection to File Share'
                                                                Start-Sleep -s 1
-                                                                 net use \\192.168.2.12 /Delete
+                                                                 net use \\192.168.0.0 /Delete
                                                                  Write-Host 'Initiating a new connection to File Share'
                                                                   Start-Sleep -s 1
-                                                                  net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                                  net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                           }
                                     
                                                      else
                                                           {
                                                              Write-Host 'Initiating a new connection to File Share'
                                                              Start-Sleep -s 1
-                                                              net use \\192.168.2.12 DC@ServerR2 /user:ituser /Persistent:Yes
+                                                              net use \\192.168.0.0 Password /user:username /Persistent:Yes
                                                              }
 
                                     
@@ -1892,7 +1892,7 @@ switch ($choice1)
                                                                                              
                                                                             
                                     
-                                                                                                    
+                                                                       #>                             
                                                          
                         
                                                                      } 
